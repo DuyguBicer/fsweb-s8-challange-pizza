@@ -1,8 +1,58 @@
 import React from 'react'
+import banner from '../../images/iteration-1-images/home-banner.png';
+import baslik from '../../images/iteration-1-images/logo.svg';
+import styled from 'styled-components';
+
+const Background = styled.div`
+  background-image: url(${banner});
+  background-size: contain;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+`;
+
+const BaslikImage = styled.img`
+  display: block;
+  margin: 40px auto;
+`;
+
+const BannerText = styled.h1`
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+`;
+
+const OrderButton = styled.button`
+  border: 1px solid #FDC913 ;
+  background-color: #FDC913;
+  display: flex;
+  margin: 40px auto;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+
+`
+
 
 function Home() {
   return (
-    <div>Home</div>
+
+    <Background>
+      <BaslikImage src={baslik} alt="baslik" />
+      <BannerText>
+        KOD ACIKTIRIR <br />
+        PİZZA, DOYURUR
+      </BannerText>
+      <OrderButton>
+        ACIKTIM
+      </OrderButton>
+    </Background>
+  
+  
   )
 }
 
