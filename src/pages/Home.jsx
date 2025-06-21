@@ -1,7 +1,7 @@
 import React from 'react'
 import banner from '../../images/iteration-1-images/home-banner.png';
-import baslik from '../../images/iteration-1-images/logo.svg';
 import styled from 'styled-components';
+import Header from "../components/Header";
 
 const Background = styled.div`
   background-image: url(${banner});
@@ -12,10 +12,6 @@ const Background = styled.div`
   overflow: hidden;
 `;
 
-const BaslikImage = styled.img`
-  display: block;
-  margin: 40px auto;
-`;
 
 const BannerText = styled.h1`
   text-align: center;
@@ -34,7 +30,9 @@ const OrderButton = styled.button`
   padding: 10px 30px;
   font-size: 1rem;
   border-radius: 50px;
-
+  cursor: pointer;
+  &:hover {
+    background-color: #ffb202;
 `
 
 
@@ -42,7 +40,7 @@ function Home() {
   return (
 
     <Background>
-      <BaslikImage src={baslik} alt="baslik" />
+      <Header/>
       <BannerText>
         KOD ACIKTIRIR <br />
         PİZZA, DOYURUR

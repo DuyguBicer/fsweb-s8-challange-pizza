@@ -3,6 +3,8 @@ import Order from './pages/Order'
 import Confirmation from './pages/Confirmation'
 import './App.css'
 import { Route , Switch } from 'react-router-dom/cjs/react-router-dom.min'
+import NavController from './components/NavController'
+import HomePage from './pages/HomePage'
 
 
 function App() {
@@ -15,6 +17,10 @@ function App() {
           <Home/>
         </Route>
 
+        <Route path="/homepage">
+          <HomePage/>
+        </Route>
+
          <Route path="/order" >
           <Order/>
         </Route>
@@ -22,8 +28,8 @@ function App() {
          <Route path="/confirmation" >
           <Confirmation/>
         </Route>
-
       </Switch>
+      <NavController/>
     </>
   )
 }

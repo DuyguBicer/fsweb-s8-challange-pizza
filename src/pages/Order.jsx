@@ -1,8 +1,19 @@
 import React from 'react'
+import styled from 'styled-components';
+import Header from "../components/Header";
+
+
+
+
+
 
 function Order() {
+
+
   return (
-    <div>Order</div>
+    <header>
+     <Header showNav={true} />
+    </header>
   )
 }
 
