@@ -3,52 +3,59 @@ import baslik from '../../images/iteration-1-images/logo.svg';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
-const BaslikImage = styled.img`
-  display: block;
-  margin: 40px auto;
-`;
 
 const HeaderBg = styled.div`
   background-color: #CE2829;
-  display: flex;
-  
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+
 
 `
+const BaslikImage = styled.img`
+  width: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+`;
+
+
 
 
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  gap: 0px;
-  margin-left: 20px ;
+  justify-content: center;
+  margin-right: 20%;
+  gap: 10px;
+  font-size: 14px;
+ margin-bottom: -18px;
 
   a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 
     &.active {
       font-weight: bold;
-      color: black;
+      color: #fff;
+      text-decoration: underline;
     }
   }
-`
+`;
 
 
 function Header({showNav}) {
   return (
     
     <HeaderBg>
-    
+    <BaslikImage src={baslik} alt="baslik" />
     {showNav && (
         <Nav>
-          <NavLink exact to="/homepage" activeClassName="active">Anasayfa</NavLink>
+          <NavLink exact to="/homepage" activeClassName="active">Anasayfa - </NavLink>
           <NavLink exact to="/order" activeClassName="active">Sipariş Oluştur</NavLink>
         </Nav>
       )}
    
-    <BaslikImage src={baslik} alt="baslik" />
+    
 
     </HeaderBg>
   
