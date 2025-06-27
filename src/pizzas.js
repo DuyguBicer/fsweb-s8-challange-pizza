@@ -9,21 +9,19 @@ const pizzas = [
         sizes:["Büyük", "Orta", "Küçük"],
         doughOptions:["Kalın" , "İnce"],
         ingredients: [
-            {topping1: "Pepperoni" },
-            {topping2:"Sosis"},
-            {topping3:"Tavuk Izgara"},
-            {topping4:"Soğan"},
-            {topping5:"Mısır"},
-            {topping6: "Sucuk" },
-            {topping7:"Sarımsak" },
-            {topping8: "Biber" },
-            {topping9: "Ananas" },
-            {topping10: "Kabak" },
-            {topping11: "Kanada Jambonu" },
-            {topping12: "Domates" },
-            {topping13: "Jalepeno" }
-
-
+            "Pepperoni",
+            "Sosis",
+            "Tavuk Izgara",
+            "Soğan",
+            "Mısır",
+            "Sucuk",
+            "Sarımsak",
+            "Biber",
+            "Ananas",
+            "Kabak",
+            "Kanada Jambonu",
+            "Domates",
+            "Jalepeno"
         ]
     },
     {
@@ -36,20 +34,19 @@ const pizzas = [
         sizes:["Büyük", "Orta", "Küçük"],
         doughOptions:["Kalın" , "İnce"],
         ingredients: [
-            {topping1: "Pepperoni" },
-            {topping2:"Sosis"},
-            {topping3:"Tavuk Izgara"},
-            {topping4:"Soğan"},
-            {topping5:"Mısır"},
-            {topping6: "Sucuk"},
-            {topping7:"Sarımsak"},
-            {topping8: "Biber"},
-            {topping9: "Ananas" },
-            {topping10: "Kabak" },
-            {topping11: "Kanada Jambonu"},
-            {topping12: "Domates" },
-            {topping13: "Jalepeno" }
-
+            "Pepperoni",
+            "Sosis",
+            "Tavuk Izgara",
+            "Soğan",
+            "Mısır",
+            "Sucuk",
+            "Sarımsak",
+            "Biber",
+            "Ananas",
+            "Kabak",
+            "Kanada Jambonu",
+            "Domates",
+            "Jalepeno"
         ]
     }
 ]
