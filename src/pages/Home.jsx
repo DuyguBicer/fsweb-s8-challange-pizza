@@ -1,4 +1,4 @@
-import React from 'react'
+
 import banner from '../../images/iteration-1-images/home-banner.png';
 import styled from 'styled-components';
 import Header from "../components/Header";

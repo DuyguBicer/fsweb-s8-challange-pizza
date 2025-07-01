@@ -35,9 +35,9 @@ const handleExtraChange = (e) => {
   return (
 
     <div>
-      <h3>Ekstra Malzemeler</h3>
+      <h3>Ekstra Malzemeler</h3><br/>
       <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
-     
+     <br/>
       <form> 
         <IngredientsGrid>
         {ingredients.map((item, i) => (

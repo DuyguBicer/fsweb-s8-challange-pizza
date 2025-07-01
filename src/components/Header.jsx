@@ -1,7 +1,7 @@
 import React from 'react'
 import baslik from '../../images/iteration-1-images/logo.svg';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
+import { NavLink } from 'react-router-dom';
 
 
 const HeaderBg = styled.div`
