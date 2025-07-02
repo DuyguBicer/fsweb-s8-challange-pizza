@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Home';
 import styled from 'styled-components';
 
+
 const HomeWrapper = styled.div`
   height: 100vh;
   display: flex;
